@@ -1,0 +1,23 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+
+    <h1>Details Page</h1>
+    <hr style="display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;">
+    </br>
+    <h3>Record number {{post.pk}}</h3>
+    <h2>Instrument number</h2>
+        <ul>
+            <li><h4>{{ post.inn }}</a></h4></li>
+        </ul>
+    <!- This what was entered into the model
+        Add the rest of the fields when done debugging ->
+
+
+
+{% endblock %}
