@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+{% for bom in boms %}
+        <div class="post">
+          <h3>Record Number {{bom.pk}}</h3>
+          <h3>Project_number</h3>
+          <p><a href="{% url 'bom_detail' pk=bom.pk %}">{{ bom.project_number }}</a></p>
+
+
+        </div>
+<hr>
+{% endfor %}
+
+{% endblock %}

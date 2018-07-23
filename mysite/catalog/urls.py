@@ -10,6 +10,10 @@ urlpatterns = [
     path('bom/<int:pk>/', views.bom_detail, name='bom_detail'),
     path('bom/new/', views.bom_new, name='bom_new'),
     path('bom/(<pk>\d+)/edit/', views.bom_edit, name='bom_edit'),
+    path('released_bom', views.released_boms, name='released_bom'),
+
+
+
     #create a BOM instrument list in which the model number can be cliked on to show details
     #create a way of editing BOMs by an authorized user.
     # After chosing the foreinkey the rest of the fields for instrumnet are automatically populated.

@@ -61,6 +61,6 @@ class Bom(models.Model):
         return self.project_number
 
 
-class Released(models.Model):
+class Instance(models.Model):
     project_number = models.CharField(max_length=10)
 

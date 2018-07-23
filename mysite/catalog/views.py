@@ -92,6 +92,11 @@ def bom_new(request):
         bom_form = BomForm()
     return render(request, 'bom_edit.html', {'bom_form': bom_form})
 
-# Save To Released table________________________________________________________________________________________________
 
+# Release table code____________________________________________________________________________________________________
 
+def released_boms(request):
+    num_boms = Bom.objects.all().count()
+    boms = Bom.objects.all()
+
+    return render(request, 'released_boms.html', {'num_boms': num_boms, 'boms': boms})
